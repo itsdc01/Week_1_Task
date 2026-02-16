@@ -11,7 +11,7 @@ public class Intern extends Employee {
 	
 	@Override
 	public double grossSalary() {
-		int attendancePercent = (int) ((getAttendanceDays() / 30.0) * 100);
+		int attendancePercent = (getAttendanceDays() / 30 * 100);
 		if(attendancePercent<70)
 		{
 			return getBaseSalary() - (getBaseSalary() * 0.20);
@@ -24,3 +24,4 @@ public class Intern extends Employee {
 	
 
 }
+
